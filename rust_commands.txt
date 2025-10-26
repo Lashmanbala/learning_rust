@@ -1,0 +1,9 @@
+cargo new learning_rust  -- To create a new project learning_rust
+cargo run                -- To compile and run the programme
+cargo add ferris-says    -- To add a new crate (package) ferris-says
+cargo build              -- To compile the proggrame (If a new crate is added manually in the toml dile, it'll be installed)
+
+Files:
+Cargo.lock  -- This file is a log of the exact versions of the dependencies we are using locally.
+Cargo.toml  -- the manifest file for Rust. It’s where you keep metadata for your project, as well as dependencies.
+src/main.rs -- where we’ll write our application code.
