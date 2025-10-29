@@ -1,9 +1,25 @@
 cargo new learning_rust  -- To create a new project learning_rust
 cargo run                -- To compile and run the programme
 cargo add ferris-says    -- To add a new crate (package) ferris-says
-cargo build              -- To compile the proggrame (If a new crate is added manually in the toml dile, it'll be installed)
+cargo build              -- To compile the proggrame. An executable file'll be created. (If a new crate is added manually in the toml dile, it'll be installed)
+rustc file_name.rs       -- To compile
+./file_name              -- To run the file
+cargo init               -- To create a cargo.toml file
+cargo check              -- This command quickly checks your code to make sure it compiles but doesn’t produce an executable
+cargo build --release    -- To compile the code with optimizations. This command will create an executable in target/release instead of target/debug
+
 
 Files:
-Cargo.lock  -- This file is a log of the exact versions of the dependencies we are using locally.
-Cargo.toml  -- the manifest file for Rust. It’s where you keep metadata for your project, as well as dependencies.
-src/main.rs -- where we’ll write our application code.
+Cargo.lock          -- This file is a log of the exact versions of the dependencies we are using locally.
+Cargo.toml          -- the manifest file for Rust. It’s where you keep metadata for your project, as well as dependencies.
+src/main.rs         -- where we’ll write our application code.
+TOML                -- Tom’s Obvious, Minimal Language
+target/debug/       -- The executable file'll be stored here after the build cmd.
+target/release      -- The optimized version of the code'll be stored as an executable
+
+
+Variables
+let
+mut
+const
+Shadowing
