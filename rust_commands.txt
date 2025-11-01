@@ -18,8 +18,40 @@ target/debug/       -- The executable file'll be stored here after the build cmd
 target/release      -- The optimized version of the code'll be stored as an executable
 
 
-Variables
+Variables:
+==========
 let
 mut
 const
 Shadowing
+we’re not allowed to mutate a variable’s type
+
+Data Types:
+==========
+two data type subsets: scalar and compound
+Rust is a statically typed language, which means that it must know the types of all variables at compile time
+compiler can usually infer what type we want to use based on the value and how we use it. 
+In cases when many types are possible, such as when we converted a String to a numeric type using parse, we need to explicitly annotate the type
+
+Scalar Types
+A scalar type represents a single value. 
+Rust has four primary scalar types: 
+    1.integers                - number without a fractional component
+    2.floating-point numbers
+    3.Booleans
+    4.characters. 
+
+Length	             Signed	    Unsigned
+8-bit	                i8	    u8
+16-bit	                i16	    u16
+32-bit	                i32	    u32
+64-bit	                i64	    u64
+128-bit	                i128	u128
+architecture dependent	isize	usize
+
+i -- signed  ( +ve / -ve) Ex: -2, +1
+u -- Unsigned (Only possitive)
+
+Range of signed int : 2^(n-1) to 2^(n-1)-1   Ex: 8 bit --> 2^(8-1) to 2 ^(8-1)-1  --> -128 to +128
+Range of unsigned int: 0 to (2^n)-1 --> Wx: 16 bit --> 0 to (2^16)-1 --> 0 to 65535
+isize and usize types depend on the architecture of the computer i.e 32bit or 64bit
